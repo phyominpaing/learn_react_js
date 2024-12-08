@@ -22,7 +22,7 @@ console.log(sum); // Output: 15
 ---
 
 2.  #### Declarative Programming:
-    - Focuses on what you want to achieve, not how to do it.
+    - Focuses on what you want to achieve, not how to do it.You don't need to write step by step instructions to execute the code.
     - You describe the logic and let JavaScript handle the underlying steps.
     - Example:
 
@@ -83,7 +83,7 @@ function add(a, b) {
 ---
 
 2. #### Immutability
-   - In functional programming, data should not be modified. Instead, new copies of data are created.
+   - In functional programming, original data should not be modified. Instead, new copies of data are created.
    - Example :
 
 ```javascript
@@ -159,24 +159,28 @@ function increment() {
 
 1. #### map():
    - Creates a new array by applying a function to each element of the original array.
+   - The original array doesn't change and shouldn't be changed to avoid side effects.
    - Example:
 
 ```javascript
 const numbers = [1, 2, 3];
 const doubled = numbers.map((num) => num * 2);
 console.log(doubled); // [2, 4, 6]
+console.log(numbers); // [1, 2, 3]
 ```
 
 ---
 
 2. #### filter():
    - Creates a new array with elements that pass a certain condition.
+   - The original array doesn't change and shouldn't be changed to avoid side effects.
    - Example :
 
 ```javascript
 const numbers = [1, 2, 3, 4];
 const evens = numbers.filter((num) => num % 2 === 0);
 console.log(evens); // [2, 4]
+console.log(numbers); // [1, 2, 3, 4]
 ```
 
 ---
@@ -189,6 +193,7 @@ console.log(evens); // [2, 4]
 const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum); // 10
+console.log(numbers) // [1, 2, 3, 4]
 ```
 
 ---
@@ -200,6 +205,9 @@ console.log(sum); // 10
 ```javascript
 const numbers = [1, 2, 3];
 numbers.forEach((num) => console.log(num));
+// Output : 1 
+         // 2
+         // 3
 ```
 
 ---
