@@ -12,7 +12,7 @@ React embraces concepts from functional programming to create predictable, maint
 1. #### Components as Pure Functions:
     - In React, functional components behave like pure functions.
     - A pure function takes inputs (props) and returns an output (JSX). It does not modify external state or have side effects.
-    - Example :
+- Example :
 
 ```jsx
 function Greeting(props) {
@@ -27,7 +27,7 @@ function Greeting(props) {
 2. #### Immutability:
     - React promotes immutability by encouraging you to avoid directly modifying state. Instead, you create new copies of data.
     - This immutability is critical for React’s ability to efficiently re-render components.
-    - Example :
+- Example :
 
 ```jsx
 const numbers = [1, 2, 3];
