@@ -1,5 +1,4 @@
 # **JavaScript Paradigms Overview**
-
 A **paradigm** is a style or way of writing code. JavaScript is a multi-paradigm language, meaning it supports different styles of programming. Understanding paradigms helps you write better, more organized, and maintainable code.
 
 ---
@@ -99,7 +98,7 @@ console.log(numbers); // [1, 2, 3] (original array unchanged)
    - Functions that either:
      - Take other functions as arguments.
      - Return a function as a result.
-     - Example :
+   - Example :
 
 ```javascript
 function greet(name) {
@@ -118,7 +117,7 @@ console.log(greetJohn("Hello")); // Output: Hello, John!
      - They can be assigned to variables.
      - They can be passed as arguments.
      - They can be returned from other functions.
-     - Example :
+   - Example :
 
 ```javascript
 const sayHello = () => console.log("Hello!");
@@ -193,7 +192,7 @@ console.log(numbers); // [1, 2, 3, 4]
 const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum); // 10
-console.log(numbers) // [1, 2, 3, 4]
+console.log(numbers); // [1, 2, 3, 4]
 ```
 
 ---
@@ -205,9 +204,9 @@ console.log(numbers) // [1, 2, 3, 4]
 ```javascript
 const numbers = [1, 2, 3];
 numbers.forEach((num) => console.log(num));
-// Output : 1 
-         // 2
-         // 3
+// Output : 1
+// 2
+// 3
 ```
 
 ---
