@@ -103,6 +103,7 @@ const list = (
 
 ```jsx
 If you don’t want an extra parent element in the DOM, you can use React fragments.
+<> </>
 ```
 
 ---
@@ -157,7 +158,7 @@ root.render(<App />);
 
 ---
 
-2. **App Component (App.js):**
+2. **App Component (App.jsx):**
     - The **App** component acts as the **root** container, where you can include other components.
 - Example :
 
@@ -264,7 +265,7 @@ function Counter() {
 
 
 
-
+---
 
  
 
